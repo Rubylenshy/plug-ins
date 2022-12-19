@@ -1,0 +1,76 @@
+
+:root{
+    --grey: rgb(45, 46, 56);
+    --white: rgb(197, 203, 255);
+    --black: rgb(14, 12, 12);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-card{
+    width: 280px;
+    min-width: 230px;
+    height: 300px;
+    padding: 5px;
+    background: url(../images/profile.jpg) center center no-repeat;
+    background-size: 350px;
+    box-shadow: -1px 10px 25px 2px rgb(0, 0,0, 0.4);
+    border-radius: 15px;
+    transition: all .7s;
+}
+.profile-card:hover{
+    background: url(../images/profile.jpg) left center no-repeat;
+    background-size: 580px;
+
+}
+.profile-card:hover .details{
+    display: flex;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.details{
+    width: 270px;
+    min-width: 220px;
+    height: 290px;
+    padding: 20px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fade .7s;
+}
+.details h2{
+    color: white;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.details img{
+    cursor: pointer;
+    width: 15px;
+    margin: 5px 0;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
