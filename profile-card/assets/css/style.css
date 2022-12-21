@@ -30,7 +30,8 @@ main{
     background: url(../images/profile.jpg) center center no-repeat;
     background-size: 350px;
     box-shadow: -1px 10px 25px 2px rgb(0, 0,0, 0.4);
-    border-radius: 15px;
+    /* outer-bd = inner-bd + space-btw */
+    border-radius: 20px;
     transition: all .7s;
 }
 .profile-card:hover{
@@ -50,7 +51,7 @@ main{
     height: 290px;
     padding: 20px;
     border: 1px solid var(--white);
-    border-radius: 10px;
+    border-radius: 15px;
     display: none;
     flex-direction: column;
     justify-content: space-between;

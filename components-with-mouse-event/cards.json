@@ -1,0 +1,17 @@
+[
+    {
+        "url": "assets/images/...",
+        "heading": "Conversations",
+        "paragragh": "Learn about the conversation model and how to create, retrieve, update, delete and list conversations"
+    },
+    {
+        "url": "assets/images/...",
+        "heading": "Messages",
+        "paragragh": "Learn about the message model and how to create, retrieve, update, delete and list messages"
+    },
+    {
+        "url": "assets/images/...",
+        "heading": "Groups",
+        "paragragh": "Learn about the group model and how to create, retrieve, update, delete and list groups"
+    }
+]

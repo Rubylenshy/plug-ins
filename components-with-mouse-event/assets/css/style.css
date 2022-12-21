@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --grey: rgb(97, 99, 121);
+    --white: rgb(197, 203, 255);
+    --black: rgb(14, 12, 12);
+    --ff-inter: 'Inter', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-inter);
+}
+main{
+    background: var(--black);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.card-component{
+    max-width: 280px;
+    padding: 40px 15px 15px;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+}
+.card-component img{
+    padding: 5px;
+    border: 1px solid var(--grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.card-component h1{
+    color: var(--white);
+    font-size: 1.35em;
+    margin: 10px 0;
+}
+.card-component p{
+    color: var(--grey);
+    font-size: 0.85em;
+    line-height: 1.45em;
+}
+
+
+@media (min-width: 650px) {
+    .container{
+        min-height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
