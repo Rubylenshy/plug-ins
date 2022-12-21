@@ -1,16 +1,16 @@
 [
     {
-        "url": "assets/images/...",
+        "url": "assets/images/conversations.svg",
         "heading": "Conversations",
         "paragragh": "Learn about the conversation model and how to create, retrieve, update, delete and list conversations"
     },
     {
-        "url": "assets/images/...",
+        "url": "assets/images/mail.svg",
         "heading": "Messages",
         "paragragh": "Learn about the message model and how to create, retrieve, update, delete and list messages"
     },
     {
-        "url": "assets/images/...",
+        "url": "assets/images/people.svg",
         "heading": "Groups",
         "paragragh": "Learn about the group model and how to create, retrieve, update, delete and list groups"
     }

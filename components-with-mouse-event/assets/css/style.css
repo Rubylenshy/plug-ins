@@ -2,8 +2,10 @@
 
 :root{
     --grey: rgb(97, 99, 121);
+    --gray: rgb(197, 203, 255);
     --white: rgb(197, 203, 255);
     --black: rgb(14, 12, 12);
+    --rr: #4df780;
     --ff-inter: 'Inter', sans-serif;
 }
 
@@ -15,13 +17,14 @@
 }
 main{
     background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     row-gap: 20px;
 }
 
@@ -30,6 +33,15 @@ main{
     padding: 40px 15px 15px;
     border: 1px solid var(--grey);
     border-radius: 15px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.card-component:hover{
+    background: linear-gradient(
+        to right,
+        rgb(197, 203, 255, 0.01) 60%,
+        rgb(197, 203, 255, 0.1) 100%
+    );
 }
 .card-component img{
     padding: 5px;
@@ -37,6 +49,12 @@ main{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.card-component:nth-child(1) img{
+    background: var(--white);
+}
+.card-component:nth-child(2) img{
+    background: var(--gray);
 }
 .card-component h1{
     color: var(--white);
@@ -49,10 +67,24 @@ main{
     line-height: 1.45em;
 }
 
+.circle{
+    display: block;
+    position: relative;
+    background: var(--rr);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    transition: all .4s;
+}
 
 @media (min-width: 650px) {
-    .container{
+    main{
         min-height: 100vh;
+    }
+
+    .container{
+        
         flex-wrap: wrap;
         flex-direction: row;
         column-gap: 20px;
