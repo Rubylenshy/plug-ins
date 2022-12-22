@@ -25,29 +25,18 @@ async function cards(file) {
     window.addEventListener('load', ()=>{
 
         const cardComp = document.querySelectorAll('.card-component')
-        // function grad(event) {
-        //     let x = event.clientX;
-        //     let y = event.clientY;
-            
-        //     cardComp.forEach(item =>{
-        //         item.style.backgroundImage = `linear-gradient(
-        //             to right,
-        //             rgb(197, 203, 255, 0.05) ${x + 'px'},
-        //             rgb(197, 203, 255, 0.1) ${y + 'px'}
-        //         )`
-        //     })
-        // }
-
-        cardComp.forEach(item =>{
-            item.addEventListener('mouseleave', ()=>{
-                circle.style.display = 'block'
-            })
-        })
-        cardComp.forEach(item =>{
-            item.addEventListener('mouseenter', ()=>{
+        
+        for (let i = 0; i < cardComp.length; i++) {
+            cardComp[i].addEventListener('mousemove', ()=>{
+                // cardComp[i].style.backgroundImage = 'linear-gradient( to right, rgb(197, 203, 255, 0.05), rgb(197, 203, 255, 0.1) )';
                 circle.style.display = 'none'
-            })
-        })
+            });
+            cardComp[i].addEventListener('mouseleave', ()=>{
+                circle.style.display = 'block'
+                // cardComp[i].style.backgroundColor = 'transparent'
+            });
+        }
+        
     })
 }
 
