@@ -43,7 +43,7 @@ async function cards(file) {
 
 document.addEventListener('mousemove', (event)=>{
     let x = event.pageX;
-    let y = event.pageY;
+    let y = event.pageY; 
 
     circle.style.left = x + 'px';
     circle.style.top = y + 'px';
