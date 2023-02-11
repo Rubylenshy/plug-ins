@@ -68,18 +68,17 @@ main{
 
 .mouse-details{
     display: none;
-    z-index: 999;
-    position: absolute;
+    position: fixed;
     transition: all .1s;
 }
 .design{
-    width: 250px;
+    width: 200px;
     opacity: .3;
 }
 .link{
     position: absolute;
-    left: 100px;
-    top: 75px;
+    left: 85px;
+    top: 60px;
     padding: 5px;
     border-radius: 50%;
     background: var(--skyblue);
