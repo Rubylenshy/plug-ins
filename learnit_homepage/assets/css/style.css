@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h4{
+    font-size: 1.65em;
+}
+
+body{
+    background: #eede05;
+}
+header{
+    margin: 20px 7.5%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.45em;
+    font-weight: 800;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header li{
+    margin: 0 15px;
+}
+.sign-in-btn{
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#hero{
+    text-align: center;
+    padding: 50px 0;
+}
+#hero h1{
+    font-size: 2.55em;
+}
+.hero-paragraph{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 12.5%;
+}
+.left-accent p::before{
+    content: "";
+    display: block;
+    background: #0688a8;
+    width: 70px;
+    height: 2px;
+    margin: 10px 0;
+}
+.left-accent,
+.right-accent p{
+    font-size: 0.75em;
+    width: 150px;
+    text-align: left;
+}
+.center-accent p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.right-accent{
+    display: flex;
+}
+.right-accent img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+
+
+#hero a {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+#illustration-images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 12.5%;
+    background: #fff;
+}
+#illustration-images > div{
+    transform: translateY(-40px);
+}
+#illustration-images img{
+    position: relative;
+    z-index: 5;
+    height: 380px;
+}
+.img-one img{
+    margin-top: -420px;
+}
+.img-two img{
+    margin-top: -440px;
+}
+.img-three img{
+    margin-top: -415px;
+}
+#illustration-images div:nth-child(2){
+    margin-top: -30px;
+}
+.background{
+    position: relative;
+    z-index: 2;
+    background: #0fc5f3;
+    border-radius: 10px;
+    width: 75%;
+    margin: 0 auto;
+    height: 320px;
+}
+.img-one div{
+    transform: rotate(-8deg);
+    margin-top: 0;
+}
+.img-two div{
+    transform: translateY(15px);
+    background: #88ebb1;
+}
+.img-three div{
+    transform: rotate(8deg);
+    background: #cfb107;
+}
