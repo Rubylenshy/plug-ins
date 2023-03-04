@@ -18,6 +18,9 @@ h4{
     font-size: 1.65em;
 }
 
+html{
+    font-size: 20px;
+}
 body{
     background: #eede05;
 }
