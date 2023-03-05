@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 1.95em;
+}
+
+.container{
+    display: flex;
+    width: 300px;
+    overflow: hidden;
+}
+.container > div{
+    width: 100%;
+    transform: scale(1);
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+.card{
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s;
+}
+.card.one, .one-details{
+    background: url(../media/cool-phone-wallpapers.png) center;
+    background-size: cover;
+}
+
+
+.card img{
+    width: 50px;
+    height: 50px;
+}
+.type-logo, .more-details{
+    display: flex;
+}
+.type-logo{
+    justify-content: space-between;
+    align-items: center;
+}
+.card-type{
+    font-size: 0.95em;
+}
+.card-number{
+    margin: 20px 0 30px;
+}
+
+.more-details{
+    justify-content: space-between;
+}
+.more-details p{
+    font-size: .75em;
+}
+.details{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+label{
+    font-size: 0.45em;
+    font-weight: 300;
+}
+
+.one-details{
+    padding: 20px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+@keyframes bounce {
+    0%{
+        transform: rotateY(180deg);
+    }
+    
+    100%{
+        transform: rotateY(-180deg);
+    }
+}
