@@ -15,6 +15,7 @@ main{
     min-height: 100vh;
 }
 
+
 h1{
     margin-bottom: 20px;
     font-size: 1.95em;
@@ -32,6 +33,7 @@ h2{
 }
 .container > div{
     width: 100%;
+    height: 100%;
     transform: scale(1);
     margin: 0 auto;
     flex-shrink: 0;
@@ -89,12 +91,17 @@ label{
 .transaction{
     display: flex;
     justify-content: space-between;
+    background: #13111183;
+    padding: 10px;
+    border-radius: 10px;
 }
 .logo-details{
     display: flex;
 }
 
 .see-card-btn{
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -112,15 +119,7 @@ label{
 .one-details.flip{
     transform: rotateY(180deg);
 }
-
-/* .card.flip-reverse{
-    transform: rotateY(-180deg);
-} */
-@keyframes bounce {
-    0%{
-        transform: rotateY(180deg);
-    }
-    100%{
-        transform: rotateY(-180deg);
-    }
+img[alt='arrow']{
+    width: 20px;
+    height: 20px;
 }
