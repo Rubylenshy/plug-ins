@@ -7,7 +7,7 @@ cardOne.addEventListener('click', ()=>{
         cardOne.style.display = 'none'
         cardOneDetails.style.display = 'block'
         cardOneDetails.classList.remove('flip')
-    }, 300);
+    }, 250);
 
 })
 document.querySelector('.see-card-btn').addEventListener('click', ()=>{
@@ -16,5 +16,5 @@ document.querySelector('.see-card-btn').addEventListener('click', ()=>{
         cardOneDetails.style.display = 'none'
         cardOne.style.display = 'block'
         cardOne.classList.remove('flip')
-    }, 300);
+    }, 250);
 })

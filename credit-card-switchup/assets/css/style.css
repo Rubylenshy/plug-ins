@@ -87,16 +87,35 @@ label{
 
 .one-details{
     padding: 20px;
+    text-align: center;
 }
 .transaction{
     display: flex;
     justify-content: space-between;
     background: #13111183;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 .logo-details{
     display: flex;
+}
+.logo-details img{
+    margin-right: 5px;
+}
+.transaction-details{
+    text-align: left;
+}
+.company{
+    font-size: .90em;
+}
+.amount, .company-p{
+    font-size: .70em;
+    font-weight: 300;
+}
+.amount{
+    display: flex;
+    align-items: center;
 }
 
 .see-card-btn{
@@ -110,9 +129,16 @@ label{
     cursor: pointer;
     transition: all .2s;
 }
+.see-card-btn > img{
+    display: none;
+}
 .see-card-btn:hover{
     background: #141414;
     color: #fff;
+}
+.see-card-btn:hover > img{
+    display: block;
+    transform: translateX(5px);
 }
 
 .card.flip,
@@ -122,4 +148,5 @@ label{
 img[alt='arrow']{
     width: 20px;
     height: 20px;
+    transition: all .2s;
 }
