@@ -113,14 +113,22 @@ label{
     font-size: .70em;
     font-weight: 300;
 }
+.company-p{
+    color: #a3a59e;
+}
 .amount{
     display: flex;
     align-items: center;
+}
+.amount > img{
+    margin-left: 10px;
 }
 
 .see-card-btn{
     display: flex;
     align-items: center;
+    margin: 20px auto;
+    width: 100px;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -136,10 +144,7 @@ label{
     background: #141414;
     color: #fff;
 }
-.see-card-btn:hover > img{
-    display: block;
-    transform: translateX(5px);
-}
+
 
 .card.flip,
 .one-details.flip{
