@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.mobile-nav .hamburger {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+.mobile-nav .hamburger-bar {
+  width: 30px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+}
+.mobile-nav .hamburger-bar::before,
+.mobile-nav .hamburger-bar::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

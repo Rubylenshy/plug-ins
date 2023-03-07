@@ -6,3 +6,37 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+$fs-100: 0.5em;
+$fs-300: 0.75em;
+$fs-500: 0.9em;
+$fs-700: 1.25em;
+$fs-800: 1.50em;
+$fs-900: 1.85em;
+
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 1px 3px 10px 3px rgba($color: #000, $alpha: 0.3);
+    .hamburger{
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+    }
+    .hamburger-bar{
+        width: 30px;
+        height: 2px;
+        background: rgb(0, 0, 0);
+    }
+    .hamburger-bar::before,
+    .hamburger-bar::after{
+        content: '';
+        display: block;
+        width: 10px;
+        height: 2px;
+        background: rgb(0, 0, 0);
+    }
+}
