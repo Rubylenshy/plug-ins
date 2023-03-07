@@ -12,7 +12,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin-top: 40px;
 }
 
 
@@ -96,11 +96,17 @@ label{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    transition: all .3s;
+}
+.transaction:hover{
+    background: #131111d0;
 }
 .logo-details{
     display: flex;
+    align-items: center;
 }
 .logo-details img{
+    width: 45px;
     margin-right: 5px;
 }
 .transaction-details{
@@ -144,7 +150,6 @@ label{
     background: #141414;
     color: #fff;
 }
-
 
 .card.flip,
 .one-details.flip{
