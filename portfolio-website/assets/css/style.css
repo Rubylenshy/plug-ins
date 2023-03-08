@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .mobile-nav {
@@ -39,6 +52,27 @@
   width: 15px;
   height: 2px;
   background: rgb(0, 0, 0);
+}
+
+@media (min-width: 550px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.25em;
+    padding: 10px 20%;
+  }
+  .desktop-nav .nav-links {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,15 +8,21 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-
-
-.mobile-nav{
+@mixin nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
     box-shadow: 1px 3px 10px 3px rgba($color: #000, $alpha: 0.3);
     font-size: $fs-700;
+}
+
+.desktop-nav{
+    display: none;
+}
+
+.mobile-nav{
+    @include nav;
     .hamburger{
         width: 30px;
         height: 25px;
@@ -42,5 +48,24 @@
         width: 15px;
         height: 2px;
         background: rgb(0, 0, 0);
+    }
+}
+
+
+@media (min-width: 550px) {
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .desktop-nav{
+        @include nav;
+        padding: 10px 20%;
+        .nav-links{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            font-size: $fs-300;
+        }
     }
 }
