@@ -30,7 +30,6 @@
         width: 30px;
         height: 2px;
         background: rgb(0, 0, 0);
-        transition: all .4s;
     }
     .hamburger-bar,
     .hamburger::before,
@@ -41,7 +40,7 @@
         height: 2px;
         background-color: black;
         margin: 4px 0;
-        transition: 0.4s;
+        transition: all 0.4s;
     }
 
     .hamburger::before{
@@ -64,10 +63,13 @@
     }
 }
 .navigation-menu{
+    position: fixed;
+    width: 100%;
     padding: 10px;
     transition: 0.4s;
     background: #fff;
-    box-shadow: 1px 3px 10px 3px rgba(#fff, 0.3);
+    box-shadow: 1px 8px 5px 1px rgba(#fff, 0.8);
+    display: none;
 
     ul li{
         padding: 10px 20px;
@@ -77,9 +79,36 @@
     }
 }
 .navigation-menu.active{
-    left: 0;
+    display: block;
+    animation: roll .3s;
 }
 
+// Main
+.detail-content{
+    text-align: center;
+    padding: 100px 20px;
+    h1{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.grid{
+    text-align: center;
+    padding: 20px 10px;
+    p{
+        margin: 10px auto 30px;
+        max-width: 700px;
+    }
+    img{
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+.projects{
+    background: #867a7a6b;
+}
 
 @media (min-width: 600px) {
     
@@ -98,11 +127,22 @@
             font-size: $fs-300;
         }
     }
+
+    
 }
 
 
 @media (max-width: 1024px) {
     .desktop-nav{
         padding: 10px 5%;
+    }
+}
+
+@keyframes roll {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

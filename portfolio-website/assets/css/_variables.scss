@@ -20,3 +20,13 @@ $fs-500: 0.9em;
 $fs-700: 1.25em;
 $fs-800: 1.50em;
 $fs-900: 1.85em;
+
+h1{
+    font-size: $fs-800;
+}
+
+@media (min-width: 600px) {
+    h1{
+        font-size: $fs-900;
+    }
+}
