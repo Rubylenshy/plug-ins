@@ -28,12 +28,15 @@ async function cards(file) {
         
         for (let i = 0; i < cardComp.length; i++) {
             cardComp[i].addEventListener('mousemove', ()=>{
-                // cardComp[i].style.backgroundImage = 'linear-gradient( to right, rgb(197, 203, 255, 0.05), rgb(197, 203, 255, 0.1) )';
-                circle.style.display = 'none'
+                let x = event.pageX;
+                let y = event.pageY; 
+
+                circle.style.left = x + 'px';
+                circle.style.top = y + 'px';
+                circle.style.display = 'block'
             });
             cardComp[i].addEventListener('mouseleave', ()=>{
-                circle.style.display = 'block'
-                // cardComp[i].style.backgroundColor = 'transparent'
+                circle.style.opacity = '1'
             });
         }
         
@@ -41,15 +44,15 @@ async function cards(file) {
 }
 
 
-document.addEventListener('mousemove', (event)=>{
-    let x = event.pageX;
-    let y = event.pageY; 
+// document.addEventListener('mousemove', (event)=>{
+//     let x = event.pageX;
+//     let y = event.pageY; 
 
-    circle.style.left = x + 'px';
-    circle.style.top = y + 'px';
-    circle.style.display = 'block'
-})
+//     circle.style.left = x + 'px';
+//     circle.style.top = y + 'px';
+//     circle.style.display = 'block'
+// })
 
-document.addEventListener('mouseleave', ()=>{
-    circle.style.display = 'none'
-})
+// document.addEventListener('mousemove', ()=>{
+//     circle.style.opacity = '0'
+// })

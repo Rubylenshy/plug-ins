@@ -84,21 +84,24 @@
 }
 
 // Main
+main > div{
+    padding: 0 15px;
+}
 .detail-content{
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 0;
     h1{
         max-width: 700px;
         margin: 0 auto;
     }
 }
 
-.grid{
+.illustration{
     text-align: center;
-    padding: 20px 10px;
     p{
         margin: 10px auto 30px;
         max-width: 700px;
+        font-size: $fs-500;
     }
     img{
         width: 100%;
@@ -107,7 +110,52 @@
 }
 
 .projects{
-    background: #867a7a6b;
+    background: #cac7c76b;
+    padding: 30px 15px;
+
+    h1{
+        margin-bottom: 20px;
+    }
+    .grid-projects{
+        display: grid;
+        gap: 20px;
+    
+        .card-component{
+            max-width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            background: $black;
+            transition: all .4s ease-in-out;
+        
+            img{
+                padding: 5px;
+                border: 1px solid $grey;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            h1{
+                color: $white;
+                font-size: 1.35em;
+            }
+            p{
+                color: $gray;
+                font-size: 0.85em;
+                line-height: 1.45em;
+                margin: 5px 0 20px;
+            }
+            .card-btn{
+                color: $white;
+                border-radius: 10px;
+                border: none;
+                padding: 5px 10px;
+                background: $mid-blue;
+            }
+        }
+        
+    }
 }
 
 @media (min-width: 600px) {
@@ -128,13 +176,34 @@
         }
     }
 
-    
+    .projects{
+        padding: 30px 15px;
+        .grid-projects{
+            grid-template-columns: repeat(2, 1fr);
+            .card-component{
+                height: 210px;
+            }
+        }
+    }
+
 }
 
 
 @media (max-width: 1024px) {
     .desktop-nav{
         padding: 10px 5%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .projects{
+        padding: 30px 10%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .projects{
+        padding: 30px 20%;
     }
 }
 
