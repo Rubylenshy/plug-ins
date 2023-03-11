@@ -10,5 +10,9 @@
     {
         "heading": "Groups",
         "paragragh": "Learn about the group model and how to create, retrieve, update, delete and list groups"
+    },
+    {
+        "heading": "Messages",
+        "paragragh": "Learn about the message model and how to create, retrieve, update, delete and list messages"
     }
 ]

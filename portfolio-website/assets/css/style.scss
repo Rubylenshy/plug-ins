@@ -90,7 +90,8 @@ main > div{
 }
 .detail-content{
     text-align: center;
-    padding: 100px 0;
+    padding: 200px 0 0;
+    height: 80vh;
     h1{
         max-width: 700px;
         margin: 0 auto;
@@ -122,21 +123,13 @@ main > div{
         gap: 20px;
     
         .card-component{
-            max-width: 100%;
-            padding: 15px;
+            padding: 20px;
             border-radius: 15px;
             cursor: pointer;
             border: none;
             background: $black;
             transition: all .4s ease-in-out;
         
-            img{
-                padding: 5px;
-                border: 1px solid $grey;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-            }
             h1{
                 color: $white;
                 font-size: 1.35em;
@@ -145,7 +138,7 @@ main > div{
                 color: $gray;
                 font-size: 0.85em;
                 line-height: 1.45em;
-                margin: 5px 0 20px;
+                margin: 5px 0 30px;
             }
             .card-btn{
                 color: $white;
@@ -171,6 +164,8 @@ main > div{
         padding: 30px 20%;
         position: fixed;
         backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         .nav-links{
             width: 400px;
             display: flex;
@@ -183,9 +178,6 @@ main > div{
         padding: 30px 15px;
         .grid-projects{
             grid-template-columns: repeat(2, 1fr);
-            .card-component{
-                height: 210px;
-            }
         }
     }
 

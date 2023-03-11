@@ -20,8 +20,10 @@ async function cards(file) {
     var newCards = ''
     cards.forEach(item => {
         let htmlCards = `<div class="card-component" >
+                            <div>
                             <h1>${item.heading}</h1>
                             <p>${item.paragragh}</p>
+                            </div>
                             <button class='card-btn' type='button'>View ${item.heading}</button>
                         </div>`;
         newCards += htmlCards;

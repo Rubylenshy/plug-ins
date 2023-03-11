@@ -105,7 +105,8 @@ main > div {
 
 .detail-content {
   text-align: center;
-  padding: 100px 0;
+  padding: 200px 0 0;
+  height: 80vh;
 }
 .detail-content h1 {
   max-width: 700px;
@@ -137,20 +138,12 @@ main > div {
   gap: 20px;
 }
 .projects .grid-projects .card-component {
-  max-width: 100%;
-  padding: 15px;
+  padding: 20px;
   border-radius: 15px;
   cursor: pointer;
   border: none;
   background: rgb(14, 12, 12);
   transition: all 0.4s ease-in-out;
-}
-.projects .grid-projects .card-component img {
-  padding: 5px;
-  border: 1px solid rgb(97, 99, 121);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
 }
 .projects .grid-projects .card-component h1 {
   color: rgb(251, 251, 253);
@@ -160,7 +153,7 @@ main > div {
   color: rgb(227, 228, 235);
   font-size: 0.85em;
   line-height: 1.45em;
-  margin: 5px 0 20px;
+  margin: 5px 0 30px;
 }
 .projects .grid-projects .card-component .card-btn {
   color: rgb(251, 251, 253);
@@ -186,6 +179,8 @@ main > div {
     padding: 30px 20%;
     position: fixed;
     backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   .desktop-nav .nav-links {
     width: 400px;
@@ -198,9 +193,6 @@ main > div {
   }
   .projects .grid-projects {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .projects .grid-projects .card-component {
-    height: 210px;
   }
 }
 @media (max-width: 1024px) {
