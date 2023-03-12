@@ -20,7 +20,8 @@ async function cards(file) {
     var newCards = ''
     cards.forEach(item => {
         let htmlCards = `<div class="card-component" >
-                            <div>
+                            <a href="${item.url}"><div class="circle"><img src="assets/media/icons8-link.svg" alt="Go to link" /></div></a>
+                            <div class="header">
                             <h1>${item.heading}</h1>
                             <p>${item.paragragh}</p>
                             </div>
@@ -31,11 +32,23 @@ async function cards(file) {
     });
     
     projects.innerHTML = newCards
-    window.addEventListener('load', ()=>{
+    // window.addEventListener('load', ()=>{
 
-        const cardComp = document.querySelectorAll('.card-component')
+    //     const cardComp = document.querySelectorAll('.card-component')
+
+    //     for (let i = 0; i < cardComp.length; i++) {
+    //         cardComp[i].addEventListener('mousemove', ()=>{
+    //             let x = event.clientX;
+    //             let y = event.clientY;
+
+    //             circle.style.left = x + 'px';
+    //             circle.style.top = y + 'px';
+    //             circle.style.display = 'block'
+    //         });
+    //         cardComp[i].addEventListener('mouseleave', ()=>{
+    //             circle.style.opacity = '1'
+    //         });
+    //     }
         
-        
-        
-    })
+    // })
 }

@@ -19,6 +19,10 @@ h1 {
   font-size: 1.5em;
 }
 
+h1, h2 {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 600px) {
   h1 {
     font-size: 1.85em;
@@ -33,7 +37,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 30px;
+  padding: 20px 30px;
   box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
   font-size: 1.25em;
 }
@@ -79,7 +83,7 @@ h1 {
 }
 
 .navigation-menu {
-  position: fixed;
+  position: absolute;
   width: 100%;
   padding: 10px;
   transition: 0.4s;
@@ -104,9 +108,10 @@ main > div {
 }
 
 .detail-content {
-  text-align: center;
-  padding: 200px 0 0;
-  height: 80vh;
+  display: grid;
+  place-content: center;
+  padding: 0 20px 0;
+  min-height: 80vh;
 }
 .detail-content h1 {
   max-width: 700px;
@@ -129,9 +134,6 @@ main > div {
 .projects {
   background: rgba(202, 199, 199, 0.4196078431);
   padding: 30px 15px;
-}
-.projects h1 {
-  margin-bottom: 20px;
 }
 .projects .grid-projects {
   display: grid;
@@ -162,6 +164,52 @@ main > div {
   padding: 5px 10px;
   background: rgb(25, 57, 163);
 }
+.projects .grid-projects .card-component .circle {
+  outline: 1px solid rgb(107, 155, 252);
+  display: none;
+  margin: -10px 0 0 95%;
+  width: 28px;
+  height: 28px;
+  background: rgb(251, 251, 253);
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+.projects .grid-projects .card-component:hover {
+  outline: 2px solid rgb(107, 155, 252);
+}
+.projects .grid-projects .card-component:hover .header {
+  margin-top: -18px;
+}
+.projects .grid-projects .card-component:hover .circle {
+  display: grid;
+  place-content: center;
+}
+
+.xp-tools {
+  padding: 30px 15px;
+  background: rgb(14, 12, 12);
+  color: rgb(251, 251, 253);
+}
+.xp-tools a {
+  text-decoration: underline;
+  color: rgb(25, 57, 163);
+}
+.xp-tools .offer-experience {
+  display: grid;
+  gap: 35px;
+}
+.xp-tools .offer-experience .offer {
+  max-width: 350px;
+}
+.xp-tools .offer-experience .experience .experience-box .xp-div {
+  margin-bottom: 20px;
+}
+.xp-tools .offer-experience .experience .experience-box .xp-div h4 {
+  margin-bottom: 5px;
+}
+.xp-tools .offer-experience .experience .experience-box .xp-div p {
+  font-weight: 300;
+}
 
 @media (min-width: 600px) {
   .mobile-nav,
@@ -173,10 +221,10 @@ main > div {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 30px 30px;
+    padding: 20px 30px;
     box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
     font-size: 1.25em;
-    padding: 30px 20%;
+    padding: 20px 20%;
     position: fixed;
     backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
@@ -188,10 +236,16 @@ main > div {
     justify-content: space-between;
     font-size: 0.75em;
   }
+  .detail-content {
+    text-align: center;
+  }
   .projects {
     padding: 30px 15px;
   }
   .projects .grid-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xp-tools .offer-experience {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -201,13 +255,13 @@ main > div {
   }
 }
 @media (min-width: 1000px) {
-  .projects {
-    padding: 30px 10%;
+  .projects, .xp-tools {
+    padding: 40px 10%;
   }
 }
 @media (min-width: 1300px) {
-  .projects {
-    padding: 30px 20%;
+  .projects, .xp-tools {
+    padding: 40px 20%;
   }
 }
 @keyframes roll {

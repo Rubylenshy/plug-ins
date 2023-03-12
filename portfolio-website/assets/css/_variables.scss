@@ -26,10 +26,14 @@ $gray: rgb(227, 228, 235);
 $white: rgb(251, 251, 253);
 $mid-blue: rgb(25, 57, 163);
 $black: rgb(14, 12, 12);
+$pale-blue: rgb(107, 155, 252);
 $rr: rgb(80, 247, 130);
 
 h1{
     font-size: $fs-800;
+}
+h1, h2{
+    margin-bottom: 20px;
 }
 
 @media (min-width: 600px) {
