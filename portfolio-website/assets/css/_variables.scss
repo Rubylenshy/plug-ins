@@ -17,10 +17,21 @@ a{
 $fs-100: 0.5em;
 $fs-300: 0.75em;
 $fs-500: 0.9em;
-$fs-700: 1.25em;
+$fs-600: 1.15em;
+$fs-700: 1.35em;
 $fs-800: 1.50em;
 $fs-900: 1.85em;
 
+//light mode
+$grey: rgb(97, 99, 121);
+$gray: rgb(227, 228, 235);
+$white: rgb(251, 251, 253);
+$mid-blue: rgb(25, 57, 163);
+$black: rgb(14, 12, 12);
+$pale-blue: rgb(107, 155, 252);
+$rr: rgb(80, 247, 130);
+
+//dark mode
 $grey: rgb(97, 99, 121);
 $gray: rgb(227, 228, 235);
 $white: rgb(251, 251, 253);
@@ -32,8 +43,14 @@ $rr: rgb(80, 247, 130);
 h1{
     font-size: $fs-800;
 }
+h2{
+    font-size: $fs-700;
+}
 h1, h2{
     margin-bottom: 20px;
+}
+p{
+    line-height: 1.5em;
 }
 
 @media (min-width: 600px) {

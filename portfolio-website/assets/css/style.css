@@ -19,8 +19,16 @@ h1 {
   font-size: 1.5em;
 }
 
+h2 {
+  font-size: 1.35em;
+}
+
 h1, h2 {
   margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 @media (min-width: 600px) {
@@ -39,7 +47,7 @@ h1, h2 {
   width: 100%;
   padding: 20px 30px;
   box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
 .mobile-nav .hamburger {
   width: 25px;
@@ -144,15 +152,15 @@ main > div {
   border-radius: 15px;
   cursor: pointer;
   border: none;
-  background: rgb(14, 12, 12);
+  background: rgb(251, 251, 253);
   transition: all 0.4s ease-in-out;
 }
 .projects .grid-projects .card-component h1 {
-  color: rgb(251, 251, 253);
+  color: rgb(14, 12, 12);
   font-size: 1.35em;
 }
 .projects .grid-projects .card-component p {
-  color: rgb(227, 228, 235);
+  color: rgb(14, 12, 12);
   font-size: 0.85em;
   line-height: 1.45em;
   margin: 5px 0 30px;
@@ -187,8 +195,8 @@ main > div {
 
 .xp-tools {
   padding: 30px 15px;
-  background: rgb(14, 12, 12);
-  color: rgb(251, 251, 253);
+  background: rgb(251, 251, 253);
+  color: rgb(14, 12, 12);
 }
 .xp-tools a {
   text-decoration: underline;
@@ -211,12 +219,25 @@ main > div {
   font-weight: 300;
 }
 .xp-tools hr {
-  background: rgb(251, 251, 253);
+  background: rgb(14, 12, 12);
   border: none;
   width: 100%;
   height: 1px;
   margin: 45px 0;
 }
+.xp-tools .tools .paragraph {
+  max-width: 350px;
+}
+.xp-tools .tools .toolbox .tool-circle .div-circle {
+  display: grid;
+  place-content: center;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid rgb(25, 57, 163);
+  border-right: 1px solid rgb(25, 57, 163);
+  border-radius: 50%;
+}
+
 @media (min-width: 600px) {
   .mobile-nav,
   .navigation-menu {
@@ -229,7 +250,7 @@ main > div {
     width: 100%;
     padding: 20px 30px;
     box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.3);
-    font-size: 1.25em;
+    font-size: 1.35em;
     padding: 20px 20%;
     position: fixed;
     backdrop-filter: blur(5px);
@@ -267,7 +288,7 @@ main > div {
 }
 @media (min-width: 1300px) {
   .projects, .xp-tools {
-    padding: 40px 20%;
+    padding: 40px 15%;
   }
 }
 @keyframes roll {
